@@ -34,13 +34,9 @@ public class Restaurant {
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
-        Item item1=new Item("x",1);
+        Item item1=new Item("Sweet corn soup",119);
         menu.add(item1);
-        Item item2=new Item("y",2);
-        menu.add(item2);
-        Item item3=new Item("z",3);
-        menu.add(item3);
-        //List<Item> menu = this.menu;
+
         return menu;
 
     }
