@@ -21,17 +21,15 @@ class RestaurantServiceTest {
         restaurantService.findRestaurantByName(restaurant);
     }
 
-    //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
+
     @Test
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         //WRITE UNIT TEST CASE HERE
-        String restaurant="name5";
+        String restaurant="Pantry d'or";
         RestaurantService restaurantService=new RestaurantService();
         Restaurant restaurant1 =restaurantService.findRestaurantByName(restaurant);
-        if(restaurant1==null){
-            throw new NullPointerException();
-        }
 
+        assertThrows(restaurantNotFoundException.class,()->service.removeRestaurant("Pantry d'or"));
 
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>

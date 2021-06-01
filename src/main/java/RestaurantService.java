@@ -13,9 +13,6 @@ public class RestaurantService {
                }
 
         }
-        /*if(getRestaurants().contains(restaurantName)){
-            return restaurantName;
-        }*/
 
 
         return null;
